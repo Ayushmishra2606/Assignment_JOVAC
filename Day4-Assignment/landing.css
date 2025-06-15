@@ -1,0 +1,21 @@
+.container{
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+}
+.head h1{
+    font-size: large;
+    text-shadow: 2px 2px 2px rgb(74, 67, 67);
+}
+.button{
+    border-radius: 4px;
+    border: none;
+    background-color:bisque;
+}
+.button:hover{
+    background-color: rgb(161, 221, 221);
+}

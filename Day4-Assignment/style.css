@@ -1,0 +1,34 @@
+.container #myHeader {
+ color: red;
+ }
+ div  h3 {
+ color: green;
+ }
+ .myText1 + .myText2 {
+ color: orange;
+ }
+ .myInput[type='text'],
+ input[type='email'] {
+ border: 2px solid green;
+ }
+
+ .contain{
+ padding: 100px;
+ color: orange;
+ font-size: 2em;
+ font-family: sans-serif;
+ text-shadow: 2px 2px 0px black;
+ font-weight: 400;
+ text-align: center;
+ line-height: 48px;
+ background-color: #222222;
+ background-image: url(https://picsum.photos/id/1014/800/300);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.contain .wrong {
+ text-decoration: line-through;
+ background-color: #000;
+ color: red;
+ font-style: italic;
+ }
