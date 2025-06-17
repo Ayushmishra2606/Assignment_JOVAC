@@ -1,0 +1,19 @@
+.container{
+    background-color: aqua;
+    position: relative;
+    width: auto;
+    height: 290px;
+}
+.box{
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left:0px ;
+    height: 30px;
+    width: 30px;
+    transition: background-color 200ms ease-in, opacity 200ms ease-in;
+}
+.box:hover {
+ background-color: #fddb3a;
+ opacity: 1;
+ }

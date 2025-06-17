@@ -1,0 +1,267 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Seoge UI';
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 5vw;
+    margin-top: 4px;
+}
+
+.image2 {
+    position: relative;
+}
+
+.logo {
+    height: 40px;
+    width: 129.5px;
+}
+
+.logoname {
+    height: 11px;
+    width: 75px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.options ul {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul li {
+    list-style: none;
+    color: rgb(124, 121, 121);
+}
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.buy {
+    height: 39px;
+    width: 115px;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.language {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.search {
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 44px 274px;
+}
+
+.downloadtext h1 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.downloadtext h1 b {
+    font-weight: bold;
+}
+
+.para {
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.download {
+    height: 48px;
+    background-color: #00b6d1;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.smallmid {
+    margin: 30px 280px;
+}
+
+.cont2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    word-break: keep-all;
+    overflow-wrap: normal;
+
+}
+
+.cont2 h2 {
+    font-weight: normal;
+}
+
+.cont2 img {
+    height: 75px;
+    width: 75px;
+    padding-right: 24px;
+}
+
+.grids {
+    height: auto;
+    width: auto;
+    max-width: 882px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.box {
+    width: 270px;
+    height: 169.8px;
+    word-break: break-all;
+    background-color: #f9f9f9;
+}
+
+.word {
+    width: 270px;
+    height: 36px;
+}
+
+.langname {
+    width: 270px;
+    height: 35.8px;
+}
+
+.bot {
+    width: 270px;
+    height: 50px;
+    text-align: center;
+}
+
+.hash {
+    height: 48px;
+    width: 270px;
+}
+
+.paral {
+    font-size: 8px;
+    align-items: center;
+    padding: 2px;
+    ;
+}
+
+.center {
+    text-align: center;
+}
+
+.but {
+    background-color: #05f09a;
+    height: 32px;
+    width: 127px;
+    color: white;
+    border: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.langname {
+    font-size: small;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    /* light black */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.newsletter-form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #00aaff;
+    /* sky blue */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #008ecc;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #aaa;
+}
