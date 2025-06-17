@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let marks = parseInt(prompt("Marks????  i am using else if"))
+
+        if (marks > 100) {
+            alert('enter valid marks out of hundred');
+        } else if (marks < 40) {
+            alert("Grade f ..... better luck next time")
+        } else if (marks >= 40 && marks < 60) {
+            alert('Grade D ...... you Passed');
+        } else if (marks >= 60 && marks < 75) {
+            alert("Grade C .... good")
+        } else if (marks >= 75 && marks < 90) {
+            alert("Grade B .... Great job ")
+        }
+        else {
+            alert("Grade A .... Excellent")
+        }
+        alert("2nd time will be using switch")
+
+        switch (true) {
+            case (marks < 40):
+                alert('Grade f ..... better luck next time')
+                break;
+            case (marks >= 40 && marks < 60):
+                alert('Grade D ...... you Passed')
+                break;
+
+            case (marks > 100):
+                alert('enter valid marks out of hundred')
+                break;
+            case (marks >= 60 && marks < 75):
+                alert("Grade C .... good")
+                break;
+
+            case (marks >= 75 && marks < 90):
+                alert("Grade B .... Great job ")
+                break;
+            case (marks >= 90):
+                alert("Grade A .... Excellent")
+                break;
+            default:
+                break;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
