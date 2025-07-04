@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color:beige;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.but{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.navBAR{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.logo img {
+    width:6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.navBAR .sc{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#search{
+    height: 5vh;
+    width: 30vw;
+}
+
+#type{
+    border: none;
+    font-size: large;
+}
+
+.cards{
+    padding: 50px;
+    width: 80vw;
+    min-height: 80vh;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    perspective:1500px;
+}
+
+.card{
+    display: flex;
+    background-image: url('https://images.seeklogo.com/logo-png/28/1/pokeball-logo-png_seeklogo-286475.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0.75rem;
+    box-shadow: 5px 2px 2px 2px rgba(0, 0, 21, 0.2);
+    width: 15rem;
+    height: 14rem;
+    overflow: hidden;
+    z-index: 0;
+    transition: transform 1s;
+}
+.picDIV img{
+    height:9rem;
+}
+
+.picDIV{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(244, 237, 237, 0.671);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail{
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    padding: 9px;
+    font-weight: bold;
+    font-size:larger;
+    background-color:rgba(239, 142, 142, 0.332);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    z-index: 10;
+
+}
+
+.card:hover{
+    transform: rotateY(360deg);
+}
+
+.card:hover .detail{
+    display: flex;
+}
+.card:hover .picDIV{
+    display: none;
+}
+
+.picDIV p{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+/* .navBAR:hover .logo img{
+    animation: anim 3s cubic-bezier(0.4, 0, 1, 1) forwards;
+}  */
+
+@keyframes anim{
+    from{
+        transform: translateY(0);
+    }
+    to{
+       transform: translateY(calc(88vh));
+    }
+}
+.container button{
+    height: 100px;
+    width: 30px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 45%;
+}
+button{
+    background-color: rgb(239, 209, 164);
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(237, 175, 81);
+}
+
+#return{
+    padding: 5px;
+    width: auto;
+    height:3rem;
+}
