@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    width: 100vw;
+    height: 11vh;
+    text-align: center;
+    padding-top: 4px;
+    background-color: rgb(156, 0, 31);
+}
+.container{
+    height: calc(100vh - 11vh);
+    width: 100vw;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 32vw;
+    width: 58vw;
+    background-color: rgb(246, 131, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatarBox{
+    height: 8vw;
+    width: 45vw;
+    margin-top: 6px;
+    background-color: rgb(240, 240, 185);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow: auto;
+    align-items: center;
+}
+.avatar{
+    grid-column: 1/5;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.createBut{
+    grid-column: 5/6;
+}
+.crB{
+    margin: 0px 10px;
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    font-size: larger;
+}
+.cir{
+    margin: 0px 10px;
+    height: 6vw;
+    width: 6vw;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 6vw;
+    border-radius: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir img{
+    height:17px;
+    width: 17px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.nameBox{
+    height: 12vw;
+    width: 37vw;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 8px;
+}
+.BoxBut{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+.BoxBut button{
+    height: 37px;
+    width:54px;
+    background-color: burlywood;
+    border-radius: 10px;
+    border: none;
+}
+.avatar::-webkit-scrollbar{
+    width:2px ;
+    background-color: rgb(242, 238, 232);
+}
+.avatar::-webkit-scrollbar-thumb{
+    background-color: rgb(40, 36, 36);
+    border-radius: 7px;
+}
