@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      width: 100vw;
+      height: 90vh;
+      position: relative;
+    }
+
+    .cir {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgb(96, 67, 67);
+      position: absolute;
+    }
+
+    button {
+      margin: 12px 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button id="reset">RESET</button>
+    <button id="undo">UNDO</button>
+    <button id="redo">REDO</button>
+  </nav>
+  <div class="container"></div>
+</body>
+<script>
+  const history = [];
+  const Redolist = [];
+
+
+  function randCol() {
+    let r = Math.ceil(0 + Math.random() * 255)
+    let g = Math.ceil(0 + Math.random() * 255)
+    let b = Math.ceil(0 + Math.random() * 255)
+    return `rgb(${r}, ${g}, ${b})`
+  }
+  document.addEventListener("click", function (e) {
+    if (e.target.tagName.toLowerCase() !== "button") {
+      const cir = document.createElement('div');
+      cir.classList.add('cir');
+      cir.style.backgroundColor = randCol();
+      cir.style.left = (e.pageX - 10) + 'px';
+      cir.style.top = (e.pageY - 10) + 'px';
+      document.body.appendChild(cir);
+      history.push(cir);
+    }
+
+
+  })
+
+  function undo() {
+    if (history.length > 0) {
+      const last = history.pop();
+      Redolist.push(last);
+      last.remove();
+    }
+  }
+  function redo() {
+    if (Redolist.length > 0) {
+      const last = Redolist.pop();
+      history.push(last);
+      document.body.appendChild(last);
+    }
+  }
+  function reSet() {
+    while (history.length > 0) {
+      const circ = history.pop();
+      circ.remove();
+    }
+    Redolist.length = 0;
+  }
+  let byt = document.getElementById("undo");
+  let byr = document.getElementById("redo");
+  let byre = document.getElementById("reset");
+  byt.addEventListener("click", (e) => {
+    undo();
+  });
+  byr.addEventListener("click", (e) => {
+    redo();
+  });
+  byre.addEventListener("click", (e) => {
+    reSet();
+  });
+
+</script>
+
+</html>
