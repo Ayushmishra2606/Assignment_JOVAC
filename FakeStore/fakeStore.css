@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.navBar img {
+    width: 13rem;
+    height: 3rem;
+}
+
+.navBar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+#inpFeild {
+    height: 5vh;
+    width: 22vw;
+}
+
+#search {
+    width: 6vw;
+    height: 6vh;
+    border-radius: 10px;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: #f2dfa3;
+    padding: 30px;
+}
+
+#category {
+    border: none;
+    font-size: medium;
+    color: rgb(81, 81, 81);
+    cursor: pointer;
+}
+
+.products {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 12rem;
+    height: 13rem;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 9rem;
+    width: 9rem;
+}
+
+.card p {
+
+    width: 12rem;
+    padding-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: large;
+    color: rgb(71, 69, 69);
+    padding-bottom: 22px;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#price .OldP {
+    text-decoration: line-through;
+    font-size: small;
+}
+
+#price .newP {
+    color: #5d1111;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footerButtons {
+    min-height: 20vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 9px;
+}
+
+.footerButtons button {
+    width: 13vw;
+    height: 5vw;
+    margin: 9px;
+    font-size: medium;
+    border-radius: 15px;
+
+}
+
+button {
+    background-color: #f1acac;
+    border: none;
+    color: rgb(116, 0, 0);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ef4747;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

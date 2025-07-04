@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fakeStore.css">
+</head>
+
+<body>
+    <nav class="navBar">
+        <img src="	https://static.beeunicorn.com/shop-website/images/logos/218ce8ca9c8134e370b07eed51f5f7eb7ccb5317.png"
+            alt="logo">
+        <div>
+            <nav class="inputFeild" >
+            <input type="text" placeholder="Search your product" id="inpFeild">
+        <button id="search" disabled>Search</button>
+        </nav>
+            <select name="category" id="category" >
+                <option value="" disabled selected>Search by category</option>
+                <option value="All">All</option>
+                <option value="TV">TV</option>
+                <option value="Audio">Audio</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Appliances">Appliances</option>
+            </select>
+
+        </div>
+    </nav>
+
+    <div class="container" id="container">
+        <div class="products" id="products"></div>
+    </div>
+
+    <div class="footerButtons">
+        <button id="loadMore">loadMore</button>
+        <button id="previous">Previous</button>
+    </div>
+
+    <script src="Fakestore.js"></script>
+</body>
+
+</html>
